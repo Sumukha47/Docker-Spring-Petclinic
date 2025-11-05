@@ -16,8 +16,8 @@ pipeline {
     }
 
     tools {
-        jdk 'JDK25'
-        maven 'Maven3.9.11'
+        jdk 'java-home25'
+        maven 'maven-home'
     }
 
     stages {
