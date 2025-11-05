@@ -4,6 +4,10 @@ pipeline {
     environment {
         APP_NAME = "spring-petclinic"
     }
+    
+    tools{
+        jdk 'java-home'
+    }
 
     stages {
         stage('Git Checkout') {
