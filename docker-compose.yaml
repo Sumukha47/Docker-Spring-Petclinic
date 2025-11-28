@@ -1,4 +1,4 @@
-app_version: "1.0"
+version: "3.9"
 
 services:
   backend:
@@ -6,10 +6,10 @@ services:
     build: .
     environment:
       SPRING_MYSQL_URL: ${SPRING_MYSQL_URL}
-      SPRING_MYSQL_USERNAME: ${SPRING_MYSQL_USERNAME} 
+      SPRING_MYSQL_USERNAME: ${SPRING_MYSQL_USERNAME}
       SPRING_MYSQL_PASSWORD: ${SPRING_MYSQL_PASSWORD}
     ports:
-      - "${SERVER_PORT}:8080"  
+      - "${SERVER_PORT}:8080"
 
   mysql:
     image: mysql:8.0
@@ -24,5 +24,4 @@ services:
       - mysql-data:/var/lib/mysql
 
 volumes:
-  mysql-data: 
-  
+  mysql-data:
